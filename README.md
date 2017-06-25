@@ -7,14 +7,12 @@ Site W·Factory Team was built using Angular2/TypeScript & Yii framework.
 ![compatibility](https://amaster.eu/demo/img/attention.png) **Note:** This repository contains Front-End only.
 
 ![preview](https://amaster.eu/demo/W-Factory/img/intro.jpg)
-![compatibility](https://amaster.eu/demo/img/compatible.jpg)
-
----
+![compatibility](https://amaster.eu/demo/img/compatible-2.jpg)
 
 [Live demo](https://amaster.eu/demo/W-Factory/)
 About project in video [youtube](https://www.youtube.com/watch?v=ZyC59_KgOsY) (&#9716; time: 1:58)
 
-Features:
+## Features:
 - Template fully based on HTML5, CSS3 standards. 
 - Is fully responsive and clean on every device and every modern browser. 
 - The template has cross-browser compatibility and responsive. 
@@ -22,7 +20,7 @@ Features:
 - All code commented. 
 - Template checking: no errors or warnings. Please see: [validator.w3.org](https://validator.w3.org/nu/?doc=https%3A%2F%2Famaster.eu%2Fdemo%2FW-Factory%2F)
 
-Credits:
+## Credits:
 - jQuery v3.1.1 – [http://jquery.com](http://jquery.com/) 
 - FullPage.js v2.9.2 – [https://alvarotrigo.com/fullPage](https://alvarotrigo.com/fullPage/)
 - Physics.js v0.7.0 – [http://wellcaffeinated.net/PhysicsJS](http://wellcaffeinated.net/PhysicsJS/)
@@ -31,9 +29,5 @@ Credits:
 - iScroll.js v5.2.0 – [https://github.com/iscroll](https://github.com/cubiq/iscroll)
 
 The project is finished and closed. Updates are not planned.
-
-![compatibility](https://amaster.eu/demo/img/frontend-development.png)
-
----
 
 **[⬆](#top)**
