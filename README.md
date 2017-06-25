@@ -15,7 +15,7 @@ Site W·Factory Team was built using Angular2/TypeScript & Yii framework.
 
 The project is finished and closed. Updates are not planned.
 
-![compatibility](https://amaster.eu/demo/img/frontend_development.png)
+![compatibility](https://amaster.eu/demo/img/frontend-development.png)
 
 ---
 
