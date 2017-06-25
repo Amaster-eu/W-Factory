@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>W-Factory</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+    /** Preload */
+    .preloader { position:fixed; z-index:30; top:0; right:0; bottom:0; left:0; background:#fff; }
+    .logo {position:fixed; left:50%; top:50%; width:60px; height:60px; margin-left:-30px; margin-top:-30px; background:transparent url(img/logo.png) no-repeat center center; z-index:52;-webkit-animation:opacity 2s linear infinite; animation:opacity 2s linear infinite;}
+    .contpre { opacity:0; position:absolute; top:50%; left:50%; margin:-40px 0 0 -40px;  width:80px; height:80px; font-size:60px; line-height:60px; text-align:center; color:#cd3333; transition: 1s; }
+    .spinner { position:absolute; width:80px; height:80px; margin:0; background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 38 38" stroke="#ccc"><g fill="none" fill-rule="evenodd"><g transform="translate(1 1)" stroke-width="1"><circle stroke-opacity=".5" cx="18" cy="18" r="18"/><path d="M36 18c0-9.94-8.06-18-18-18" stroke="#cd3333"><animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s" repeatCount="indefinite"/></path></g></g></svg>') center center no-repeat;background-size:80px;  }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="contpre"><div class="spinner"><div class="logo"></div></div></div>
+    </div>
+
+    <nav>
+        <div id="menu-icon-wrapper" class="menu-icon-wrapper">
+            <svg width="1000px" height="1000px">
+                <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                <path id="pathB" d="M 300 500 L 700 500"></path>
+                <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>  
+        <ul id="menu">
+            <li data-menuanchor="home" class="active"><a href="#home" data-letters="home">home</a></li>
+            <li data-menuanchor="work"><a href="#work" data-letters="work">work</a></li>
+            <li data-menuanchor="services"><a href="#services" data-letters="services">services</a></li>
+            <li data-menuanchor="team"><a href="#team" data-letters="team">team</a></li>
+            <li data-menuanchor="contact"><a href="#contact" data-letters="contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="section home active">
+            <video loop muted data-autoplay>
+                 <source src="video/work-mac.mp4" type="video/mp4"> 
+            </video>
+            <div id="viewport">
+                <div id="ball1" class="joboffer-ball ball_grey" data-title="Click me">
+                        <p><!-- JS: insert text here --></p>
+                </div>
+                <div id="ball2" class="joboffer-ball ball_blue" data-title="Click me">
+                        <p><!-- JS: insert text here --></p>
+                </div>
+            </div>            
+            <div class="intro">
+                <h1><span class="w">W</span>·Factory
+                <span class="normalize"><br>
+                     we create projects <br>
+                     that <span class="cycle-content" data-word-cycle='["inspire.", "fascinate.","matter.", "convince.", "convert.", "delight."]'>inspire.</span></span></h1>
+            </div>
+            <a class="scroll" role="button" onclick="$.fn.fullpage.moveSectionDown();"></a>
+        </div>
+        <div class="section work">
+            <div class="slide active">
+                <div class="intro">
+                        <h3>Our latest projects</h3>
+                        <ul class="click-work">
+                            <li>
+                                <span role="button" data-title="Click me" onclick="$.fn.fullpage.moveTo(2, 1);">
+                                    <img class="click-img" src="img/work/click-img.jpg" alt="Click Me">
+                                    <img class="work-img" src="img/work/wfactory.jpg" alt="wfactory">                                
+                                </span>
+                            </li><!--
+                        --><li>
+                                <span role="button" data-title="Click me" onclick="$.fn.fullpage.moveTo(2, 2);">
+                                    <img class="click-img" src="img/work/click-img.jpg" alt="Click Me">
+                                    <img class="work-img" src="img/work/clickmoney.jpg" alt="clickmoney">                                    
+                                </span>
+                                </li><!--
+                        --><li>
+                                <span role="button" data-title="Click me" onclick="$.fn.fullpage.moveTo(2, 3);">
+                                    <img class="click-img" src="img/work/click-img.jpg" alt="Click Me">
+                                    <img class="work-img" src="img/work/drmarderskincare.jpg" alt="drmarderskincare">                                    
+                                </span>
+                            </li><!--
+                        --><li>
+                                <span role="button" data-title="Click me" onclick="$.fn.fullpage.moveTo(2, 4);">
+                                    <img class="click-img" src="img/work/click-img.jpg" alt="Click Me">
+                                    <img class="work-img" src="img/work/inmodemd.jpg" alt="inmodemd">                                    
+                                </span>
+                            </li><!--
+                        --><li>
+                                <span role="button" data-title="Click me" onclick="$.fn.fullpage.moveTo(2, 5);">
+                                    <img class="click-img" src="img/work/click-img.jpg" alt="Click Me">
+                                    <img class="work-img" src="img/work/touchandglowwand.jpg" alt="touchandglowwand">
+                                </span>
+                            </li><!--
+                        --><li>
+                                <span role="button" data-title="Click me" onclick="$.fn.fullpage.moveTo(2, 6);">
+                                <img class="click-img" src="img/work/click-img.jpg" alt="Click Me">
+                                    <img class="work-img" src="img/work/westsidemedicalspa.jpg" alt="westsidemedicalspa">                                    
+                                </span>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <a href="#"><span>See our work</span> W·Factory</a>
+                    <div class="skills projects">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>Platform: Angular2, Yii</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Angular2/TypeScript</li>
+                            <li>Development</li>
+                            <li>Responsive Web Design</li>
+                        </ul>
+                    </div>
+                    <video class="visible-xs" controls loop muted poster="img/work/wfactory.jpg" width="428" height="240" data-autoplay>
+                        <source src="https://amaster.eu/demo/video/wfactory-mob.mp4" type="video/mp4" />
+                    </video>                    
+                    <video class="hidden-xs" loop muted poster="img/work/wfactory.jpg" width="778" height="438" data-autoplay>
+                        <source src="https://amaster.eu/demo/video/wfactory.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <a href="#"><span>See our work</span> Click&shy;Money</a>
+                    <div class="skills projects">
+                        <h3>ClickMoney System</h3>
+                        <ul>
+                            <li>Platform: Yii</li>
+                            <li>PHP</li>
+                            <li>Email Marketing Services: AWeber</li>
+                            <li>Mail Minion</li>
+                            <li>Autoresponder</li>
+                            <li>MailChimp</li>
+                            <li>GetResponse</li>
+                            <li>PSD to HTML</li>
+                            <li>Responsive Web Design</li> 
+                            <li>JS, jQuery</li>
+                            <li>Git</li>                                                                                         
+                        </ul>
+                    </div>
+                    <video class="visible-xs" controls loop muted poster="img/work/clickmoney.jpg" width="428" height="240" data-autoplay>
+                        <source src="https://amaster.eu/demo/video/clickmoney-mob.mp4" type="video/mp4" />
+                    </video>
+                    <video class="hidden-xs" loop muted poster="img/work/clickmoney.jpg" width="778" height="438" data-autoplay>
+                        <source src="https://amaster.eu/demo/video/clickmoney.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <a href="#"><span>See our work</span> Skin&shy;Care</a>
+                    <div class="skills projects">
+                        <h3>SkinCare eCommerce</h3>
+                        <ul>
+                            <li>Platform: Shopify</li>
+                            <li>PSD to Shopify Template</li> 
+                            <li>Development</li>
+                            <li>Responsive Web Design</li>
+                            <li>eCommerce</li>
+                            <li>SEO optimization</li>                                                                                         
+                        </ul>
+                    </div>
+                    <video class="visible-xs" controls loop muted poster="img/work/drmarderskincare.jpg" width="428" height="240" data-autoplay>
+                        <source src="https://amaster.eu/demo/video/drmarderskincare-mob.mp4" type="video/mp4" />
+                    </video>
+                    <video class="hidden-xs" loop muted poster="img/work/drmarderskincare.jpg" width="778" height="438" data-autoplay>
+                        <source src="https://amaster.eu/demo/video/drmarderskincare.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <a href="#"><span>See our work</span> In&shy;mode</a>
+                    <div class="skills projects">
+                        <h3>Inmode Aesthetic Solutions</h3>
+                        <ul>
+                            <li>Platform: Wordpress</li>
+                            <li>PSD to HTML</li> 
+                            <li>JS, jQuery</li>
+                            <li>JS Gallery</li>
+                            <li>Development</li>
+                            <li>Responsive Web Design</li> 
+                            <li>SEO optimization</li>
+                        </ul>
+                    </div>
+                    <video class="visible-xs" controls loop muted poster="img/work/inmodemd.jpg" width="428" height="240" data-autoplay>
+                        <source src="https://amaster.eu/demo/video/inmodemd-mob.mp4" type="video/mp4" />
+                    </video>
+                    <video class="hidden-xs" loop muted poster="img/work/inmodemd.jpg" width="778" height="438" data-autoplay>
+                        <source src="https://amaster.eu/demo/video/inmodemd.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <a href="#"><span>See our work</span> Touch&shy;+&shy;Clow</a>
+                    <div class="skills projects">
+                        <h3>Touch+Clow</h3>
+                        <ul>
+                            <li>Landing Page</li>
+                            <li>PayPal Payment Method</li> 
+                            <li>PSD to HTML</li> 
+                            <li>jQuery</li>
+                            <li>Development</li>
+                            <li>Responsive Web Design</li> 
+                            <li>Protected Information</li>   
+                        </ul>
+                    </div>
+                    <video class="visible-xs" controls loop muted poster="img/work/touchandglowwand.jpg" width="428" height="240" data-autoplay>
+                        <source src="https://amaster.eu/demo/video/touchandglowwand-mob.mp4" type="video/mp4" />
+                    </video>
+                    <video class="hidden-xs" loop muted poster="img/work/touchandglowwand.jpg" width="778" height="438" data-autoplay>
+                        <source src="https://amaster.eu/demo/video/touchandglowwand.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <a href="#"><span>See our work</span> Aesthe&shy;tics</a>
+                    <div class="skills projects">
+                        <h3>Westside Aesthetics</h3>
+                        <ul>
+                            <li>Platform: Wordpress</li>
+                            <li>PSD to HTML</li> 
+                            <li>JS, jQuery</li>
+                            <li>Development</li>
+                            <li>Responsive Web Design</li> 
+                            <li>SEO optimization</li>  
+                        </ul>
+                    </div>
+                    <video class="visible-xs" controls loop muted poster="img/work/westsidemedicalspa.jpg" width="428" height="240" data-autoplay>
+                        <source src="https://amaster.eu/demo/video/westsidemedicalspa-mob.mp4" type="video/mp4" />
+                    </video>
+                    <video class="hidden-xs" loop muted poster="img/work/westsidemedicalspa.jpg" width="778" height="438" data-autoplay>
+                        <source src="https://amaster.eu/demo/video/westsidemedicalspa.mp4" type="video/mp4" />
+                    </video>                 
+                </div>
+            </div>
+        </div>
+        <div class="section services">
+            <video loop muted data-autoplay>
+                 <source src="video/services.mp4" type="video/mp4">
+            </video>
+            <div class="intro">
+                <h2>We Love <span>the web</span></h2>
+                <p>We are digital natives. We plan, design and develop websites and mobile apps. We believe in the persuasive power of great design and smooth interfaces to help brands grow their business. But more than that we want to give our users a great time online!
+                    <br>Learn more about <a class="link-services" href="#"><strong>our services</strong></a></p>
+            </div>
+            <a class="scroll" role="button" onclick="$.fn.fullpage.moveSectionDown();"></a>
+        </div>
+        <div class="section team">
+            <div class="slide active">
+                <div class="intro">
+                    <h3><span class="w">W</span>·Factory</h3>
+                    <div class="tabs">
+                        <input id="tab1" type="radio" name="tabs" checked>
+                        <label for="tab1" title="Team" class="hidden-sm">Team</label>
+                        <input id="tab2" type="radio" name="tabs">
+                        <label for="tab2" title="Skills" class="hidden-sm">Skills</label>
+                        <div id="tab-team">
+                            <div class="flip-container">
+                                <div class="flipper" role="button" onclick="$.fn.fullpage.moveTo(4, 1);">
+                                    <div class="front" style="background: url(img/team/1a.jpg) 0 0 no-repeat;">
+                                        <div class="front-title">Founder</div>
+                                    </div>
+                                    <div class="back" style="background: url(img/team/1b.jpg) 0 0 no-repeat;">
+                                        <div class="back-title">Vlad</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-container">
+                                <div class="flipper" role="button" onclick="$.fn.fullpage.moveTo(4, 2);">
+                                    <div class="front" style="background: url(img/team/2a.jpg) 0 0 no-repeat;">
+                                        <div class="front-title">Back-End</div>
+                                    </div>
+                                    <div class="back" style="background: url(img/team/2b.jpg) 0 0 no-repeat;">
+                                        <div class="back-title">Masha</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-container">
+                                <div class="flipper" role="button" onclick="$.fn.fullpage.moveTo(4, 3);">
+                                    <div class="front" style="background: url(img/team/3a.jpg) 0 0 no-repeat;">
+                                        <div class="front-title">Back-End</div>
+                                    </div>
+                                    <div class="back" style="background: url(img/team/3b.jpg) 0 0 no-repeat;">
+                                        <div class="back-title">Sergei</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-container">
+                                <div class="flipper" role="button" onclick="$.fn.fullpage.moveTo(4, 4);">
+                                    <div class="front" style="background: url(img/team/4a.jpg) 0 0 no-repeat;">
+                                        <div class="front-title">Front-End</div>
+                                    </div>
+                                    <div class="back" style="background: url(img/team/4b.jpg) 0 0 no-repeat;">
+                                        <div class="back-title">Andrey</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-skills">
+                            <ul class="skills">
+                                <li>HTML5</li>
+                                <li>CSS3, CSS3 Animation</li> 
+                                <li>PSD to HTML</li>
+                                <li>Responsive Web Design</li> 
+                                <li>Twitter Bootstrap</li>                           
+                                <li>JS, jQuery</li>
+                                <li>Angular.js</li>
+                                <li>Node.js</li>     
+                                <li>React.js</li>  
+                                <li>PHP</li>
+                                <li>Object Oriented PHP</li>
+                                <li>Wordpress</li>                                
+                                <li>Laravel Framework</li>
+                                <li>Slim</li>
+                                <li>Yii</li>
+                                <li>Zend Framework</li>
+                                <li>MySQL Administration</li>
+                                <li>PostgreSQL Administration</li>
+                                <li>Git</li>                                                   
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="slide">
+                <div class="intro">
+                    <img class="visible-xs" src="img/team/1.jpg" alt="Team">
+                    <video class="hidden-xs" muted data-autoplay>
+                         <source src="video/vlad.mp4" type="video/mp4">
+                    </video>
+                    <div class="team-block">
+                        <div class="skills">
+                            <h2>Vladyslav Mustafin</h2>
+                            <h3>Founder</h3>
+                            <a href="https://www.linkedin.com/in/vladmustafin" class="linkedin" target="_blank">
+                                <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='#1984bc'><path d='M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 26h-4v-14h4v14zM10 10c-1.106 0-2-0.894-2-2s0.894-2 2-2c1.106 0 2 0.894 2 2s-0.894 2-2 2zM26 26h-4v-8c0-1.106-0.894-2-2-2s-2 0.894-2 2v8h-4v-14h4v2.481c0.825-1.131 2.087-2.481 3.5-2.481 2.488 0 4.5 2.238 4.5 5v9z'></path></svg>
+                                linkedin.com/vladmustafin
+                            </a>
+                            <a href="https://www.upwork.com/fl/vladyslavmustafin" class="upwork" target="_blank">
+                                <svg xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox="0 0 56.7 56.7" fill='#6FDA44'><path d="M38.8,24.6c-2.8,0-3.7,2.7-3.9,4.3v0.1l-0.4,1.5c1.2,1,2.7,1.7,4.2,1.7c2,0,3.8-1.7,3.9-3.9C42.6,26.3,40.9,24.6,38.8,24.6 z"/><path d="M28.9,3.7C15.2,3.7,4.1,14.8,4.1,28.5c0,13.7,11.1,24.8,24.8,24.8c13.7,0,24.8-11.1,24.8-24.8C53.7,14.8,42.6,3.7,28.9,3.7 z M38.8,36.1c-2,0-3.7-0.6-5.2-1.5l-1.7,8H28l2.4-11c-1-1.4-2-3-2.7-4.5v1.7c0,4.1-3.3,7.4-7.3,7.4c-4,0-7.3-3.3-7.3-7.4v-10h3.8   v10c0,2,1.6,3.6,3.6,3.6c2,0,3.6-1.6,3.6-3.6v-10h3.8c0.8,2.5,2.1,5.5,3.8,8.2c1-3.8,3.8-6.1,7.3-6.1c4.1,0,7.5,3.4,7.5,7.5 C46.3,32.7,42.9,36.1,38.8,36.1z"/></svg>
+                                upwork.com/vladyslavmustafin
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="slide">
+                <div class="intro">
+                    <img class="visible-xs" src="img/team/2.jpg" alt="Team">
+                    <video class="hidden-xs" muted data-autoplay>
+                         <source src="video/masha.mp4" type="video/mp4">
+                    </video>                
+                     <div class="team-block">
+                        <div class="skills">
+                            <h2>Mariia Denysiuk</h2>
+                            <h3>Back-End <span>Development</span></h3>
+                            <a href="https://www.linkedin.com/in/denysiuk-mariia-18009494" class="linkedin" target="_blank">
+                                <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='#1984bc'><path d='M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 26h-4v-14h4v14zM10 10c-1.106 0-2-0.894-2-2s0.894-2 2-2c1.106 0 2 0.894 2 2s-0.894 2-2 2zM26 26h-4v-8c0-1.106-0.894-2-2-2s-2 0.894-2 2v8h-4v-14h4v2.481c0.825-1.131 2.087-2.481 3.5-2.481 2.488 0 4.5 2.238 4.5 5v9z'></path></svg>
+                                linkedin.com/denysiukmariia
+                            </a>
+                            <a href="https://www.upwork.com/fl/mariiadenysiuk" class="upwork" target="_blank">
+                                <svg xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox="0 0 56.7 56.7" fill='#6FDA44'><path d="M38.8,24.6c-2.8,0-3.7,2.7-3.9,4.3v0.1l-0.4,1.5c1.2,1,2.7,1.7,4.2,1.7c2,0,3.8-1.7,3.9-3.9C42.6,26.3,40.9,24.6,38.8,24.6 z"/><path d="M28.9,3.7C15.2,3.7,4.1,14.8,4.1,28.5c0,13.7,11.1,24.8,24.8,24.8c13.7,0,24.8-11.1,24.8-24.8C53.7,14.8,42.6,3.7,28.9,3.7 z M38.8,36.1c-2,0-3.7-0.6-5.2-1.5l-1.7,8H28l2.4-11c-1-1.4-2-3-2.7-4.5v1.7c0,4.1-3.3,7.4-7.3,7.4c-4,0-7.3-3.3-7.3-7.4v-10h3.8   v10c0,2,1.6,3.6,3.6,3.6c2,0,3.6-1.6,3.6-3.6v-10h3.8c0.8,2.5,2.1,5.5,3.8,8.2c1-3.8,3.8-6.1,7.3-6.1c4.1,0,7.5,3.4,7.5,7.5 C46.3,32.7,42.9,36.1,38.8,36.1z"/></svg>
+                                upwork.com/mariiadenysiuk
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <img class="visible-xs" src="img/team/3.jpg" alt="Team">
+                    <video class="hidden-xs" muted data-autoplay>
+                         <source src="video/sergey.mp4" type="video/mp4">
+                    </video>                
+                     <div class="team-block">
+                        <div class="skills">
+                            <h2>Sergei Nikonov</h2>
+                            <h3>Back-End <span>Development</span></h3>
+                            <a href="https://www.linkedin.com/in/sergeinikonov" class="linkedin" target="_blank">
+                                <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='#1984bc'><path d='M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 26h-4v-14h4v14zM10 10c-1.106 0-2-0.894-2-2s0.894-2 2-2c1.106 0 2 0.894 2 2s-0.894 2-2 2zM26 26h-4v-8c0-1.106-0.894-2-2-2s-2 0.894-2 2v8h-4v-14h4v2.481c0.825-1.131 2.087-2.481 3.5-2.481 2.488 0 4.5 2.238 4.5 5v9z'></path></svg>
+                                linkedin.com/sergeinikonov
+                            </a>
+                            <a href="https://www.upwork.com/fl/sergeinikonov" class="upwork" target="_blank">
+                                <svg xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox="0 0 56.7 56.7" fill='#6FDA44'><path d="M38.8,24.6c-2.8,0-3.7,2.7-3.9,4.3v0.1l-0.4,1.5c1.2,1,2.7,1.7,4.2,1.7c2,0,3.8-1.7,3.9-3.9C42.6,26.3,40.9,24.6,38.8,24.6 z"/><path d="M28.9,3.7C15.2,3.7,4.1,14.8,4.1,28.5c0,13.7,11.1,24.8,24.8,24.8c13.7,0,24.8-11.1,24.8-24.8C53.7,14.8,42.6,3.7,28.9,3.7 z M38.8,36.1c-2,0-3.7-0.6-5.2-1.5l-1.7,8H28l2.4-11c-1-1.4-2-3-2.7-4.5v1.7c0,4.1-3.3,7.4-7.3,7.4c-4,0-7.3-3.3-7.3-7.4v-10h3.8   v10c0,2,1.6,3.6,3.6,3.6c2,0,3.6-1.6,3.6-3.6v-10h3.8c0.8,2.5,2.1,5.5,3.8,8.2c1-3.8,3.8-6.1,7.3-6.1c4.1,0,7.5,3.4,7.5,7.5 C46.3,32.7,42.9,36.1,38.8,36.1z"/></svg>
+                                upwork.com/sergeinikonov
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <img class="visible-xs" src="img/team/4.jpg" alt="Team">
+                    <video class="hidden-xs" muted data-autoplay>
+                         <source src="video/andrey.mp4" type="video/mp4">
+                    </video>                
+                     <div class="team-block">
+                        <div class="skills">
+                            <h2>Andrey Gordienko</h2>
+                            <h3>Front-End <span>Development</span></h3>
+                            <a href="https://www.linkedin.com/in/a-master" class="linkedin" target="_blank">
+                                <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='#1984bc'><path d='M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 26h-4v-14h4v14zM10 10c-1.106 0-2-0.894-2-2s0.894-2 2-2c1.106 0 2 0.894 2 2s-0.894 2-2 2zM26 26h-4v-8c0-1.106-0.894-2-2-2s-2 0.894-2 2v8h-4v-14h4v2.481c0.825-1.131 2.087-2.481 3.5-2.481 2.488 0 4.5 2.238 4.5 5v9z'></path></svg>
+                                linkedin.com/a-master
+                            </a>
+                            <a href="https://www.upwork.com/fl/andreygordienko" class="upwork" target="_blank">
+                                <svg xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox="0 0 56.7 56.7" fill='#6FDA44'><path d="M38.8,24.6c-2.8,0-3.7,2.7-3.9,4.3v0.1l-0.4,1.5c1.2,1,2.7,1.7,4.2,1.7c2,0,3.8-1.7,3.9-3.9C42.6,26.3,40.9,24.6,38.8,24.6 z"/><path d="M28.9,3.7C15.2,3.7,4.1,14.8,4.1,28.5c0,13.7,11.1,24.8,24.8,24.8c13.7,0,24.8-11.1,24.8-24.8C53.7,14.8,42.6,3.7,28.9,3.7 z M38.8,36.1c-2,0-3.7-0.6-5.2-1.5l-1.7,8H28l2.4-11c-1-1.4-2-3-2.7-4.5v1.7c0,4.1-3.3,7.4-7.3,7.4c-4,0-7.3-3.3-7.3-7.4v-10h3.8   v10c0,2,1.6,3.6,3.6,3.6c2,0,3.6-1.6,3.6-3.6v-10h3.8c0.8,2.5,2.1,5.5,3.8,8.2c1-3.8,3.8-6.1,7.3-6.1c4.1,0,7.5,3.4,7.5,7.5 C46.3,32.7,42.9,36.1,38.8,36.1z"/></svg>
+                                upwork.com/andreygordienko
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="section contact">
+            <div class="intro">
+                <h2>Contact Us. <span class="normalize"><a class="link-contact cycle-content" href="#" data-word-cycle='["send message","send message"]'>send message</a></span></h2>
+                <ul class="imprint">
+                    <li class="location">
+                        <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='#cd3333'><path d='M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z'></path></svg>
+                        Ukraine
+                    </li>
+                    <li class="email">
+                        <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='#cd3333'><path d='M29 4h-26c-1.65 0-3 1.35-3 3v20c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-20c0-1.65-1.35-3-3-3zM12.461 17.199l-8.461 6.59v-15.676l8.461 9.086zM5.512 8h20.976l-10.488 7.875-10.488-7.875zM12.79 17.553l3.21 3.447 3.21-3.447 6.58 8.447h-19.579l6.58-8.447zM19.539 17.199l8.461-9.086v15.676l-8.461-6.59z'></path></svg>
+                        <a href="mailto:wfactory@gmail.com">wfactory@gmail.com</a>
+                    </li>
+                    <li class="upwork">
+                        <svg xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox="0 0 56.7 56.7" fill='#cd3333'><path d="M38.8,24.6c-2.8,0-3.7,2.7-3.9,4.3v0.1l-0.4,1.5c1.2,1,2.7,1.7,4.2,1.7c2,0,3.8-1.7,3.9-3.9C42.6,26.3,40.9,24.6,38.8,24.6 z"/><path d="M28.9,3.7C15.2,3.7,4.1,14.8,4.1,28.5c0,13.7,11.1,24.8,24.8,24.8c13.7,0,24.8-11.1,24.8-24.8C53.7,14.8,42.6,3.7,28.9,3.7 z M38.8,36.1c-2,0-3.7-0.6-5.2-1.5l-1.7,8H28l2.4-11c-1-1.4-2-3-2.7-4.5v1.7c0,4.1-3.3,7.4-7.3,7.4c-4,0-7.3-3.3-7.3-7.4v-10h3.8   v10c0,2,1.6,3.6,3.6,3.6c2,0,3.6-1.6,3.6-3.6v-10h3.8c0.8,2.5,2.1,5.5,3.8,8.2c1-3.8,3.8-6.1,7.3-6.1c4.1,0,7.5,3.4,7.5,7.5 C46.3,32.7,42.9,36.1,38.8,36.1z"/></svg>
+                        <a href="https://www.upwork.com/o/companies/~01f33f5ebfa9c4f16e" target="_blank">www.upwork.com</a>
+                    </li>
+                </ul>
+                <div class="motivation">
+                    <p><strong>Your consideration is greatly appreciated.</strong></p>
+                    <p>We propose to start our collaboration and we sure it will be very long-term.</p>
+                </div>                
+            </div>
+        </div>
+    </main>
+
+    <div class="popup">
+        <div class="popup-services">
+            <header>
+                <section>
+                    <h2>What We Do</h2>
+                    <h4>We help brands radically improve their websites and create<br>
+                    exciting new digital products. It usually involves these four steps:</h4>
+                </section>
+            </header>
+            <article>
+                <section class="service">
+                    <ul>
+                        <li class="strategy">
+                            <h4>Your one stop service</h4>
+                            <p>Whatever you need, we guide you through the process and our experience means we’ll help with plenty of advice and guidance to make sure you meet your goals. And our service doesn’t end with the website launch, because we’ll be on hand to support you, and maintain and develop your site. We create websites that bring new business to our clients, and help them make the best use of technology.</p>
+                        </li>
+                        <li class="ux-design web-development">
+                            <h4>Strategy</h4>
+                            <p>In order to maximize the return on our clients' Web investments, it is crucial that we commit to a thorough analysis of needs and develop an integrated strategic plan. Our seasoned professionals work closely with clients to ensure that their web goals are in line with their marketing and overall strategic business objectives.</p>                            
+                        </li>
+                        <li class="creativity">
+                            <h4>Pixel-Perfect Development</h4>
+                            <p>Every website we develop is coded by hand, focusing on flawless user experience and lightning fast load speeds. Whether you're looking for a brand new website or application, we're the team for you. All of our websites are mobile-friendly, and built in the recommended content management system for your project ensuring really simple editing.</p>
+                        </li>
+                        <li class="technology">
+                            <h4>Technology</h4>
+                            <p>We are a full-cycle Ukraine-based web development services firm. Broad and deep technological know-how is the wellspring of all our innovative web solutions. Our high degree of aptitude in web technology strategy and diverse programming languages gives us the ability to select the right strategy, platform and tool for each project and get the most out of it.</p>
+                        </li>
+                    </ul>
+                </section>
+                <div class="expertise">
+                    <section>
+                        <h3>Expertise</h3>
+                        <ul>
+                            <li>PHP, Object Oriented PHP</li>
+                            <li>Zend Framework</li>
+                            <li>Laravel Framework</li>
+                            <li>Yii, Slim</li>
+                            <li>MySQL, PostgreSQL Administration</li>
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>Angular.js</li>
+                            <li>JavaScript, jQuery</li>
+                            <li>HTML5</li>
+                            <li>CSS3, CSS3 Animation</li>
+                            <li>Git</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="work-with-us">
+                    <a href="#contact">
+                        <h3>Want to work with us?</h3>
+                        <p><span data-icon-after="→">Get in touch</span></p>
+                    </a>
+                </div>
+            </article>
+        </div>
+        <div class="popup-contact">
+            <h2>Please fill out this simple form <br><span class="normalize">All fields are required!</span></h2>
+            <div class="contact-form">
+                <form action="mailer.php" method="post" autocomplete="off">
+                    <div class="wrapper">
+                        <input class="no-outline" type="text" id="name" name="name" placeholder="What’s your name?">
+                        <div class="error-msg">Please enter your name</div>
+                    </div>
+                    <div class="wrapper">
+                        <input class="no-outline" type="text" id="email" name="email" placeholder="Your Email or number">
+                        <div class="error-msg">Please enter a valid Email Address</div>
+                    </div>
+                    <div class="wrapper">
+                        <textarea class="no-outline" id="message" name="message" placeholder="What can we help you with?"></textarea>
+                        <div class="error-msg">Please enter a message</div>
+                    </div>
+                    <button type="submit" name="submit" disabled>Send</button>
+                    <button onclick="history.go(-1)">Cansel</button>
+                </form>
+            </div>
+        </div>
+    </div>    
+    <a class="btn-close" href="/">&nbsp;</a>
+    <div class="notification" style="display:none;">
+        <p>Your message has been successfully sent</p>
+        <div class="clocks-animation">
+            <div class="clock">
+                <div class="hours-container">
+                    <div class="hours"></div>
+                </div>
+                <div class="minutes-container">
+                    <div class="minutes"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" style="display:none;"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        /** Preload.js */
+        var $ww = window.innerWidth;
+        var $hh = window.innerHeight;
+        $('.contpre').css({ 'opacity': 1 });
+        $(window).on('load', function () {
+            var $preloader = $('.preloader'),
+                $spinner   = $preloader.find('.spinner');
+            $spinner.delay(800).fadeOut();
+            $preloader.delay(1000).fadeOut('slow');
+        });
+    </script>
+    <script src="js/function.js"></script>
+    <script src="js/functions.min.js"></script>
+
+</body>
+
+</html>
