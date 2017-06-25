@@ -9,9 +9,9 @@ Site W·Factory Team was built using Angular2/TypeScript & Yii framework.
 ![preview](https://amaster.eu/demo/W-Factory/img/intro.jpg)
 ![compatibility](https://amaster.eu/demo/img/compatible-3.jpg)
 
-[Live demo](https://amaster.eu/demo/W-Factory/)
+![Live demo](https://amaster.eu/demo/W-Factory/)
 
-About project in video [youtube](https://www.youtube.com/watch?v=ZyC59_KgOsY) (&#9716; time: 1:58)
+About project in video ![youtube](https://www.youtube.com/watch?v=ZyC59_KgOsY) (time: 1:58 min)
 
 ## Features:
 - Template fully based on HTML5, CSS3 standards. 
