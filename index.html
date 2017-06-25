@@ -548,12 +548,12 @@
         var $ww = window.innerWidth;
         var $hh = window.innerHeight;
         $('.contpre').css({ 'opacity': 1 });
-        $(window).on('load', function () {
+        setTimeout(function() {
             var $preloader = $('.preloader'),
                 $spinner   = $preloader.find('.spinner');
             $spinner.delay(800).fadeOut();
             $preloader.delay(1000).fadeOut('slow');
-        });
+        }, 3000);
     </script>
     <script src="js/function.js"></script>
     <script src="js/functions.min.js"></script>
