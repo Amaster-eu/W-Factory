@@ -19,7 +19,8 @@ About project in video [youtube](https://www.youtube.com/watch?v=ZyC59_KgOsY) (t
 - The template has cross-browser compatibility and responsive. 
 - Template based on clean and modern design technique. 
 - All code commented. 
-- Template checking: no errors or warnings. Please see: [validator.w3.org](https://validator.w3.org/nu/?doc=https%3A%2F%2Famaster.eu%2Fdemo%2FW-Factory%2F)
+- Template checking: no errors or warnings. Please see: [https://validator.w3.org](https://validator.w3.org/nu/?doc=https%3A%2F%2Famaster.eu%2Fdemo%2FW-Factory%2F)
+- Optimized for fast download and friendship for SEO. Please see: [http://developers.google.com/pagespeed](http://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Famaster.eu%2Fdemo%2FW-Factory%2F&tab=mobile)
 
 ## Credits:
 - jQuery v3.1.1 – [http://jquery.com](http://jquery.com/) 
