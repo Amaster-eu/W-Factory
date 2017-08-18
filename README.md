@@ -4,9 +4,9 @@ W·Factory - Superteam of web programmers: creation of sites and Internet projec
 
 Site W·Factory Team was built using Angular2/TypeScript & Yii framework.
 
-![compatibility](https://amaster.eu/demo/img/attention.png) **Note:** This repository contains Front-End only.
+**Note:** This repository contains Front-End only.
 
-![preview](https://amaster.eu/demo/W-Factory/img/intro.jpg)
+![preview](https://raw.githubusercontent.com/Amaster-eu/W-Factory/dev/img/intro.jpg)
 ![compatibility](https://amaster.eu/demo/img/compatible-3.jpg)
 
 [Live demo](https://amaster.eu/demo/W-Factory/)
